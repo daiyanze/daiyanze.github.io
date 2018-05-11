@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Dai Yanze</title>
+  <meta name="description" content="A personal home page for Yanze Dai. Yanze Dai is a passionate software developer.">
+  <meta name="keywords" content="daiyanze,Python,PHP,JavaScript,Tokyo,Engineer">
+  <meta name="email" content="ginoalex8964@yahoo.com">
+  <meta name="author" content="Yanze Dai">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <nav>
+    <div class="nav__wrapper">
+      <div class="nav__title">
+        <div class="nav__mark">
+          <span><b style="color: #5995DA">D.</b></span>
+        </div>
+        <div class="nav__name">
+          <span><i>Daiyanze</i></span>
+        </div>
+      </div>
+      <ul class="nav__menu">
+        <a href="#about">
+          <li class="nav__menuItem">about</li>
+        </a>
+        <a href="#story">
+          <li class="nav__menuItem">story</li>
+        </a>
+        <a href="#work">
+          <li class="nav__menuItem">work</li>
+        </a>
+        <a href="#contact">
+          <li class="nav__menuItem">contact</li>
+        </a>
+      </ul>
+    </div>
+  </nav>
+  <main class="content__wrapper">
+    <section id="about">
+      <div class="content__description">
+        <h1>hello, I'm</h1>
+        <h1>Dai Yanze.</h1>
+        <p>A <b><i>software engineer</i></b> from China based in Tokyo/Japan.</p>
+        <p>
+          I started my programmer career from 2015 and worked amongst a lot of elegant engineers who helped me improve my knowledge and skills.
+        </p>
+        <p>I love web technologies, contributing to opensource projects, interaction design etc...</p>
+      </div>
+      <div class="content__image">
+        <img width="280" height="380" type="image/png" src="images/image.png">
+      </div>
+    </section>
+    <section id="story">
+      <div class="timeline-item" date-is='Jun 4th. 1989'>
+        <h4>Born in China</h4>
+        <p>I was born in Yanji-city, where I spent 19 years growing up.</p>
+      </div>
+      <div class="timeline-item" date-is='Feb 2015'>
+        <h4>Graduated from Yokohama Commerce College (Japan)</h4>
+        <p>In 2011, I started learning business administration in Yokohama Commerce College. In my second year of college, I happened to get in touch with web technologies and soon got very much obsessed with them. Those days and nights that kept me awake for server and design solutions are a lot memorable and valuable to me.</p>
+      </div>
+      <div class="timeline-item" date-is='Oct 2015'>
+        <h4>Joined Intersoft Inc as a software engineer</h4>
+      </div>
+      <div class="timeline-item" date-is='Jun 2017'>
+        <h4>Joined Jxpress Co as a front end developer</h4>
+      </div>
+      <div class="timeline-item" date-is='May 2018'>
+        <h4>Joined Rakuten Inc as a software engineer</h4>
+      </div>
+    </section>
+  </main>
+</body>
+<script type="text/javascript">
+  function scrollTo(id, duration = 100) {
+    var element = document.getElementById(id);
+    var to = element.offsetTop
+    var difference = to - element.scrollTop;
+    var perTick = difference / duration * 2;
+
+    setTimeout(function() {
+      element.scrollTop = element.scrollTop + perTick;
+      scrollTo(element, to, duration - 2);
+    }, 10);
+  }
+</script>
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-98403506-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
