@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <title>Dai Yanze</title>
   <meta name="description" content="A personal home page for Yanze Dai. Yanze Dai is a passionate software developer.">
-  <meta name="keywords" content="daiyanze,Python,PHP,JavaScript,Tokyo,Engineer">
+  <meta name="keywords" content="daiyanze,Python,JavaScript,Tokyo,Engineer">
   <meta name="email" content="ginoalex8964@yahoo.com">
   <meta name="author" content="Yanze Dai">
 
@@ -24,79 +24,132 @@
 <body>
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <nav>
-    <div class="nav__wrapper">
-      <div class="nav__title">
-        <div class="nav__mark">
-          <span><b style="color: #5995DA">D.</b></span>
+  <main class="container">
+    <nav>
+      <div class="nav__wrapper">
+        <div class="nav__title">
+          <div class="nav__mark">
+            <span><b style="color: #5995DA">D.</b></span>
+          </div>
+          <div class="nav__name">
+            <span><i>Daiyanze</i></span>
+          </div>
         </div>
-        <div class="nav__name">
-          <span><i>Daiyanze</i></span>
-        </div>
+        <ul class="nav__menu">
+          <li class="nav__menuItem">
+            <a href="#intro" onclick="scrollToAnchor(event)">
+              intro
+            </a>
+          </li>
+          <li class="nav__menuItem">
+            <a href="#story" onclick="scrollToAnchor(event)">
+              story
+            </a>
+          </li>
+          <li class="nav__menuItem">
+            <a href="#contact" onclick="scrollToAnchor(event)">
+              contact
+            </a>
+          </li>
+        </ul>
       </div>
-      <ul class="nav__menu">
-        <a href="#about">
-          <li class="nav__menuItem">about</li>
-        </a>
-        <a href="#story">
-          <li class="nav__menuItem">story</li>
-        </a>
-        <a href="#work">
-          <li class="nav__menuItem">work</li>
-        </a>
-        <a href="#contact">
-          <li class="nav__menuItem">contact</li>
-        </a>
-      </ul>
+    </nav>
+    <div class="content__wrapper">
+      <section class="intro">
+        <div class="content__description">
+          <a class="anchor" id="intro"></a>
+          <div class="content__intro">
+            <div class="content__image-thumbnail">
+              <img width="100" height="100" type="image/png" src="images/img.png">
+            </div>
+            <div class="content__text">
+              <h1>hello, I'm</h1>
+              <h1>Dai Yanze.</h1>
+            </div>
+          </div>
+          <p>A <b><i>software engineer</i></b> from China based in Tokyo/Japan.</p>
+          <p>
+            I started my programmer career from 2015 and worked amongst a lot of ellite engineers with whom I created many successful software and applications.
+          </p>
+          <p>I love web technologies, contributing to opensource projects, interaction design and many more...</p>
+        </div>
+        <div class="content__image-cover">
+          <img width="210" height="280" type="image/png" src="images/image.png">
+        </div>
+      </section>
+      <section class="story">
+        <div class="timeline-item" date-is='Jun 4th. 1989'>
+          <h4>Born in China</h4>
+          <p>I was born in Yanji-city, where I spent 19 years growing up.</p>
+        </div>
+        <a class="anchor" id="story"></a>
+        <div class="timeline-item" date-is='Feb 2015'>
+          <h4>Graduated from Yokohama Commerce College (Japan)</h4>
+          <p>In 2011, I started learning business administration in Yokohama Commerce College. In my second year of college, I got obsessed with web technologies. Those days and nights that kept me awake for server solutions are very memorable and valuable to me.</p>
+        </div>
+        <div class="timeline-item" date-is='Oct 2015'>
+          <h4>Software Engineer in Intersoft Inc</h4>
+          <p>
+            I started my engineer career here and got instructed by a very experienced mentor with whom I smoothly grasp a lot of skills to contribute to projects. 
+          </p>
+        </div>
+        <div class="timeline-item" date-is='Jun 2017'>
+          <h4>Software Engineer in Jxpress Co</h4>
+          <p>
+            Jxpress is a great venture company with a super casual office atomsphere. I used Python and Javascript to develop some successfull enterprise applications which help replace conservative and redundant job routine. 
+          </p>
+        </div>
+        <div class="timeline-item" date-is='May 2018'>
+          <h4>Software Engineer in Rakuten Co</h4>
+          <p>
+            
+          </p>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="contact__wrapper">
+          hello
+        </div>
+      </section>
     </div>
-  </nav>
-  <main class="content__wrapper">
-    <section id="about">
-      <div class="content__description">
-        <h1>hello, I'm</h1>
-        <h1>Dai Yanze.</h1>
-        <p>A <b><i>software engineer</i></b> from China based in Tokyo/Japan.</p>
-        <p>
-          I started my programmer career from 2015 and worked amongst a lot of elegant engineers who helped me improve my knowledge and skills.
-        </p>
-        <p>I love web technologies, contributing to opensource projects, interaction design etc...</p>
-      </div>
-      <div class="content__image">
-        <img width="280" height="380" type="image/png" src="images/image.png">
-      </div>
-    </section>
-    <section id="story">
-      <div class="timeline-item" date-is='Jun 4th. 1989'>
-        <h4>Born in China</h4>
-        <p>I was born in Yanji-city, where I spent 19 years growing up.</p>
-      </div>
-      <div class="timeline-item" date-is='Feb 2015'>
-        <h4>Graduated from Yokohama Commerce College (Japan)</h4>
-        <p>In 2011, I started learning business administration in Yokohama Commerce College. In my second year of college, I happened to get in touch with web technologies and soon got very much obsessed with them. Those days and nights that kept me awake for server and design solutions are a lot memorable and valuable to me.</p>
-      </div>
-      <div class="timeline-item" date-is='Oct 2015'>
-        <h4>Joined Intersoft Inc as a software engineer</h4>
-      </div>
-      <div class="timeline-item" date-is='Jun 2017'>
-        <h4>Joined Jxpress Co as a front end developer</h4>
-      </div>
-      <div class="timeline-item" date-is='May 2018'>
-        <h4>Joined Rakuten Inc as a software engineer</h4>
-      </div>
-    </section>
+    <footer>
+      <small><b>&copy Copyright since 2018.</b></small> <a href="https://daiyanze.com" style="color: #5995DA;">daiyanze.com</a>
+    </footer>
   </main>
 </body>
+<!-- Smooth scroll -->
 <script type="text/javascript">
-  function scrollTo(id, duration = 100) {
-    var element = document.getElementById(id);
-    var to = element.offsetTop
-    var difference = to - element.scrollTop;
-    var perTick = difference / duration * 2;
+  Math.easeInOutCubic = function (t, b, c, d) {
+    if ((t/=d/2) < 1) return c/2*t*t*t + b;return c/2*((t-=2)*t*t + 2) + b;
+  };
+  function doScroll(to) {
+    var duration = 700,
+    start = (window.pageYOffset || document.documentElement.scrollTop)  - (document.documentElement.clientTop || 0),
+    change = to - start,
+    currentTime = 0,
+    increment = 16,
+    animateScroll = function() {
+      currentTime += increment;
+      window.scrollTo(0, Math.easeInOutCubic(currentTime, start, change, duration));
+      if (currentTime < duration) {
+        setTimeout(animateScroll, increment);
+      }
+    };
 
-    setTimeout(function() {
-      element.scrollTop = element.scrollTop + perTick;
-      scrollTo(element, to, duration - 2);
-    }, 10);
+    animateScroll();
+  }
+  function scrollToAnchor(e) {
+    e.preventDefault();
+    var id = e.target.text.trim();
+    var hashId = '#'+id;
+    var to = document.getElementById(id).offsetTop;
+    doScroll(to);
+    if(history.pushState) {
+      history.pushState(null, null, hashId);
+    }
+    else {
+      location.hash = hashId;
+    }
   }
 </script>
 <script type="text/javascript">
